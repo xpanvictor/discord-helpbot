@@ -31,6 +31,7 @@ export async function execute(interaction: CommandInteraction, client: Client) {
     **Problem: **${problemDescription.value}
     `)
 
+    // @ts-ignore
     await createTicket(thread.id, problemDescription.value)
 
     return interaction.reply({

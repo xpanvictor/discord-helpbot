@@ -39,6 +39,7 @@ function execute(interaction, client) {
     **User:**< ${user}>
     **Problem: **${problemDescription.value}
     `);
+        // @ts-ignore
         yield (0, firebase_1.createTicket)(thread.id, problemDescription.value);
         return interaction.reply({
             content: 'Help is on the way!',
