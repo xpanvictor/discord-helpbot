@@ -9,4 +9,4 @@ const api = createRestApi(client)
 api.listen(PORT, ()=>console.log(`Rest api up at ${PORT}`))
 
 
-export default api
+module.exports = api
